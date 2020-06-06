@@ -9,7 +9,7 @@ function Navigate(){
 } 
 function Sports(){
     const request = new XMLHttpRequest();
-    request.open("GET",'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=za&category=sports&apiKey=32ba5b8c899f4c398208cbc11c6081b9')
+    request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=sports&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
     
     request.onload = function(){
         let news = JSON.parse(request.responseText);
@@ -50,11 +50,11 @@ function Sports(){
     
     }
     
-    request.send();
+    request.send(null);
 }
 function Technology(platform){
     const request = new XMLHttpRequest();
-    request.open("GET",'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=za&category=technology&apiKey=32ba5b8c899f4c398208cbc11c6081b9')
+    request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=technology&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
     
     request.onload = function(){
         let news = JSON.parse(request.responseText);
@@ -95,10 +95,10 @@ function Technology(platform){
     
     }
     
-    request.send();
+    request.send(null);
 }
 const request = new XMLHttpRequest();
-request.open("GET",'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=za&category=general&apiKey=32ba5b8c899f4c398208cbc11c6081b9')
+request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=general&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
 
 request.onload = function(){
     let news = JSON.parse(request.responseText);
@@ -138,7 +138,7 @@ request.onload = function(){
 
 }
 
-request.send();
+request.send(null);
 
 
 
