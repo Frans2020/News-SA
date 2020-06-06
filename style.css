@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    margin: 0.5em;
+    border-radius: 5px;
+}
+.jumbotron{
+    text-align: center;
+    margin: 10% 0 0 0;
+    background:url('news.jpg');
+    background-size: cover;
+    box-shadow: 5px 5px 10px;
+}
+.jumbotron p{
+    font-family: 'Open Sans Condensed', sans-serif;
+} 
+#nav-home,#nav-technology,#nav-sports{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 0 0 10%;
+    position: absolute;
+}
