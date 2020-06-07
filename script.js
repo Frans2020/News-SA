@@ -71,12 +71,12 @@ function Technology(platform){
             cardImage.src = article.urlToImage;
             cardImage.style.width = '100%';
             card.appendChild(cardImage);
-            let cardBodyTitle = document.createElement('h5');
+            let cardBodyTitle = document.createElement('small');
             cardBodyTitle.classList.add('card-title'); 
             cardBodyTitle.textContent = article.title;
             cardBodyTitle.style.padding
             let cardBodyText = document.createElement('p');
-            cardBodyText.classList.add('card-text'); 
+            cardBodyText.classList.add('card-text');  
             cardBodyText.textContent = article.content;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";

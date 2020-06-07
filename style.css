@@ -2,10 +2,10 @@
     padding:0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
-}
+} 
 nav{
     margin: 0.5em;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 .jumbotron{
     text-align: center;
@@ -22,4 +22,11 @@ nav{
     grid-template-columns: 50% 50%;
     margin: 0 0 0 10%;
     position: absolute;
+}
+.card-text{
+    font-family: 'Open Sans Condensed', sans-serif;
+}  
+.card{
+    padding:0;
+    margin: 0;
 }
