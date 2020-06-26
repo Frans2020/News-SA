@@ -38,7 +38,7 @@ function Healths(){
             let button = document.createElement('a');
             button.href = article.url;
             button.style.textDecoration = 'underline';
-            button.textContent = 'Learn more'
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
             cardBody.appendChild(cardBodyTitle);
             cardBody.appendChild(cardBodyText); 
             cardBody.appendChild(button);
@@ -82,8 +82,8 @@ function Technology(platform){
             cardBody.style.textAlign = 'center';
             let button = document.createElement('a');
             button.href = article.url;
-            button.style.textDecoration = 'underline';
-            button.textContent = 'Learn more'
+            button.style.textDecoration = 'underline'; 
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
             cardBody.appendChild(cardBodyTitle);
             cardBody.appendChild(cardBodyText); 
             cardBody.appendChild(button);
@@ -127,7 +127,7 @@ function Generals() {
             let button = document.createElement('a');
             button.href = article.url;
             button.style.textDecoration = 'underline';
-            button.textContent = 'Learn more'
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
             cardBody.appendChild(cardBodyTitle);
             cardBody.appendChild(cardBodyText); 
             cardBody.appendChild(button);

@@ -30,3 +30,16 @@ nav{
     margin: 0;
     box-shadow: 5px 5px 15px;
 } 
+.navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+.footer { 
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    background-color: #E74C3C; 
+
+} 
