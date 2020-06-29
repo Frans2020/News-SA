@@ -1,12 +1,15 @@
 let general = document.querySelector('#nav-home'); 
 let technology = document.querySelector('#nav-technology');
-let sports = document.querySelector('#nav-sports');
+let healths = document.querySelector('#nav-sports');
 let tab = document.querySelector('#nav-tab');
 let articles = [];
 window.addEventListener('DOMContentLoaded',(e)=>{
     Generals();
 });
 function Healths(){ 
+    while (general.hasChildNodes()) {
+        general.removeChild(general.lastChild)
+    }
     const request = new XMLHttpRequest();
     request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=health&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
     
@@ -25,26 +28,30 @@ function Healths(){
             cardImage.src = article.urlToImage;
             cardImage.style.width = '100%';
             card.appendChild(cardImage);
-            let cardBodyTitle = document.createElement('small');
+            let cardBodyTitle = document.createElement('h6');
             cardBodyTitle.classList.add('card-title'); 
             cardBodyTitle.textContent = article.title;
             cardBodyTitle.style.padding
-            let cardBodyText = document.createElement('p');
+            let cardBodyText = document.createElement('h6');
             cardBodyText.classList.add('card-text'); 
             cardBodyText.textContent = article.content;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em';
+            // cardBody.style.textAlign = 'center';
             let button = document.createElement('a');
+            button.style.textAlign = 'center';
             button.href = article.url;
+            button.style.position = 'absolute'; 
+            button.style.bottom = 0;
             button.style.textDecoration = 'underline';
-            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Read more';
             cardBody.appendChild(cardBodyTitle);
-            cardBody.appendChild(cardBodyText); 
+            cardBody.appendChild(cardBodyText);  
             cardBody.appendChild(button);
             card.appendChild(cardBody);
             
-            sports.append(card);
+           healths.append(card);
         });
     
     }
@@ -52,6 +59,9 @@ function Healths(){
     request.send(null);
 }
 function Technology(platform){
+    while (technology.hasChildNodes()) {
+        technology.removeChild(technology.lastChild)
+    }
     const request = new XMLHttpRequest();
     request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=technology&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
     
@@ -70,20 +80,23 @@ function Technology(platform){
             cardImage.src = article.urlToImage;
             cardImage.style.width = '100%';
             card.appendChild(cardImage);
-            let cardBodyTitle = document.createElement('small');
+            let cardBodyTitle = document.createElement('h6');
             cardBodyTitle.classList.add('card-title'); 
             cardBodyTitle.textContent = article.title;
             cardBodyTitle.style.padding
-            let cardBodyText = document.createElement('p');
+            let cardBodyText = document.createElement('h6');
             cardBodyText.classList.add('card-text');  
             cardBodyText.textContent = article.content;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em';
+            // cardBody.style.textAlign = 'center';
             let button = document.createElement('a');
             button.href = article.url;
+            button.style.position = 'absolute'; 
+            button.style.bottom = 0;
             button.style.textDecoration = 'underline'; 
-            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Read more';
             cardBody.appendChild(cardBodyTitle);
             cardBody.appendChild(cardBodyText); 
             cardBody.appendChild(button);
@@ -97,6 +110,9 @@ function Technology(platform){
     request.send(null);
 }
 function Generals() {
+    while (general.hasChildNodes()) {
+        general.removeChild(general.lastChild)
+    }
     const request = new XMLHttpRequest();
     request.open("GET",'http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=za&category=general&apiKey=32ba5b8c899f4c398208cbc11c6081b9',true)
 
@@ -115,19 +131,22 @@ function Generals() {
             cardImage.src = article.urlToImage;
             cardImage.style.width = '100%';
             card.appendChild(cardImage);
-            let cardBodyTitle = document.createElement('small');
+            let cardBodyTitle = document.createElement('h6');
             cardBodyTitle.classList.add('card-title'); 
             cardBodyTitle.textContent = article.title; 
-            let cardBodyText = document.createElement('p');
+            let cardBodyText = document.createElement('h6');
             cardBodyText.classList.add('card-text'); 
             cardBodyText.textContent = article.description;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em';
+            // cardBody.style.textAlign = 'center';
             let button = document.createElement('a');
             button.href = article.url;
-            button.style.textDecoration = 'underline';
-            button.innerHTML = '<i class="fas fa-link"></i>'+'Learn more';
+            button.style.position = 'absolute'; 
+            button.style.bottom = 0;
+            button.style.textDecoration = 'underline'; 
+            button.innerHTML = '<i class="fas fa-link"></i>'+'Read more';
             cardBody.appendChild(cardBodyTitle);
             cardBody.appendChild(cardBodyText); 
             cardBody.appendChild(button);
