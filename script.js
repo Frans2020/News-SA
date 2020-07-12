@@ -18,11 +18,7 @@ function Healths(){
         articles = news.articles;  
         articles.forEach(article => {
             let card = document.createElement('div');
-            card.classList.add('card'); 
-            card.style.width = '70%'; 
-            card.style.margin = '5% 0 0 0'
-            card.style.border = '1px solid #CFD8DC'
-            card.style.borderRadius = '5px';
+            card.classList.add('card');  
             let cardImage = document.createElement('img'); 
             cardImage.classList.add('card-img-top'); 
             cardImage.src = article.urlToImage;
@@ -70,11 +66,7 @@ function Technology(platform){
         articles = news.articles;  
         articles.forEach(article => {
             let card = document.createElement('div');
-            card.classList.add('card'); 
-            card.style.width = '70%'; 
-            card.style.margin = '5% 0 0 0'
-            card.style.border = '1px solid #CFD8DC'
-            card.style.borderRadius = '5px';
+            card.classList.add('card');  
             let cardImage = document.createElement('img'); 
             cardImage.classList.add('card-img-top'); 
             cardImage.src = article.urlToImage;
@@ -122,10 +114,6 @@ function Generals() {
         articles.forEach(article => {
             let card = document.createElement('div');
             card.classList.add('card'); 
-            card.style.width = '70%'; 
-            card.style.margin = '5% 0 0 0'
-            card.style.border = '1px solid #CFD8DC'
-            card.style.borderRadius = '5px';
             let cardImage = document.createElement('img'); 
             cardImage.classList.add('card-img-top'); 
             cardImage.src = article.urlToImage;

@@ -9,7 +9,7 @@ nav{
 }
 .jumbotron{
     text-align: center;
-    margin: 10% 0 0 0;
+    margin: 35% 0 0 0;
     background:url('news.jpg');
     background-size: cover;
     box-shadow: 5px 5px 10px;
@@ -19,7 +19,7 @@ nav{
 } 
 #nav-home,#nav-technology,#nav-sports{
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 50% 50%;  
     position: absolute;
 }
 .card-text{
@@ -29,6 +29,10 @@ nav{
     padding:0;
     margin: 0;
     box-shadow: 5px 5px 15px;
+    width : 75%; 
+    margin :5% 0 0 0;
+    border :1px solid #CFD8DC;
+    border-radius:5px;
 } 
 .navbar-brand{
     padding: 0;
