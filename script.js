@@ -33,8 +33,7 @@ function Healths(){
             cardBodyText.textContent = article.content;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.margin = '0.5em';
-            // cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em'; 
             let button = document.createElement('a');
             button.style.textAlign = 'center';
             button.href = article.url;
@@ -81,8 +80,7 @@ function Technology(platform){
             cardBodyText.textContent = article.content;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.margin = '0.5em';
-            // cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em'; 
             let button = document.createElement('a');
             button.href = article.url;
             button.style.position = 'absolute'; 
@@ -127,8 +125,7 @@ function Generals() {
             cardBodyText.textContent = article.description;
             let cardBody = document.createElement('div');
             cardBody.classList.add = "card-body";
-            cardBody.style.margin = '0.5em';
-            // cardBody.style.textAlign = 'center';
+            cardBody.style.margin = '0.5em'; 
             let button = document.createElement('a');
             button.href = article.url;
             button.style.position = 'absolute'; 
